@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Body Gesture Detection</title>
+    <title>Hands Gesture Detection</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 20px;
+        }
+        h1 {
+            color: #333333;
+        }
+        img {
+            margin-top: 20px;
+            border: 1px solid #333333;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <h1>Body Gesture Detection</h1>
     <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <pre>{{ contents }}</pre>
 </body>
 </html>
